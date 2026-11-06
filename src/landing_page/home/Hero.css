@@ -1,0 +1,139 @@
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero-section {
+  margin-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* ========================= */
+/* IMAGE ANIMATION */
+/* ========================= */
+
+.hero-image {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  animation: fadeDown 1.2s ease;
+}
+
+/* ========================= */
+/* HEADING ANIMATION */
+/* ========================= */
+
+.hero-title {
+  font-size: 42px;
+  font-weight: 600;
+  animation: fadeUp 1.2s ease;
+}
+
+/* ========================= */
+/* DESCRIPTION ANIMATION */
+/* ========================= */
+
+.hero-description {
+  font-size: 18px;
+  animation: fadeUp 1.6s ease;
+}
+
+/* ========================= */
+/* BUTTON ANIMATION */
+/* ========================= */
+
+.hero-button {
+  width: 20%;
+  margin: auto;
+  border: 2px solid #387ed1;
+  color: #387ed1;
+  animation: fadeUp 2s ease;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #387ed1;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* ANIMATIONS */
+/* ========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 15px;
+  }
+
+  .hero-button {
+    width: 70% !important;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE DEVICES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-button {
+    width: 85% !important;
+  }
+}
